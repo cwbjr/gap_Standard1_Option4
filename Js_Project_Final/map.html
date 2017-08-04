@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ballew | CWB-205 Project Final</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/source.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://openlayers.org/en/v4.1.1/css/ol.css" type="text/css">
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+    <script src="https://openlayers.org/en/v4.1.1/build/ol.js"></script>
+    <script src="js/map.js"></script>
+ </head>
+<body>
+
+<!-- Sidebar -->
+
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+
+ <img src="img/Ballew.jpg" class="w3-border" alt="CharlesBallew" style="padding:10px;width:50%">
+  <h3 class="w3-bar-item w3-center w3-text-teal">Charles Ballew</h3>
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-teal w3-border w3-color-blue">Introduction</a>
+  <a href="photos.html" class="w3-bar-item w3-button w3-hover-teal w3-border">Photos</a>
+  <a href="map.html" class="w3-teal w3-bar-item w3-button w3-hover-teal w3-border">Map</a>
+  <a href="form.html" class="w3-bar-item w3-button w3-hover-teal w3-border">Form</a>
+</div>
+
+<!-- Page Content -->
+<div style="margin-left:25%">
+
+<div class="w3-container w3-teal">
+  <h1>Project Final | CWB-205 <span>(Map)</span></h1>
+</div>
+
+<div class="w3-container">
+<h2>Map</h2>
+<p>Below is your Location in Lat/Long.</p>
+<hr />
+<p id="loc">[Lat/Long will show here after you click button.]</p>
+
+<button onclick="getLocation()">Find Me</button>
+<hr />
+
+<br />
+<h2>Travel the World...No reservation needed.  Enjoy.</h2>
+ <a class="skiplink" href="#map">Go to map</a>
+    <div id="map" class="map" tabindex="0"></div>
+    <button id="zoom-out">Zoom out</button>
+    <button id="zoom-in">Zoom in</button>
+
+
+</div>
+
+</div>
+<script src="js/map.js"></script>
+<link rel="stylesheet" href="https://openlayers.org/en/v4.1.1/css/ol.css" type="text/css">
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+    <script src="https://openlayers.org/en/v4.1.1/build/ol.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJwvMQeuPPej-ryaHRdGvBPya8JjaQSz0&callback=myMap"></script>
+<script src="js/jquery-3.2.0.js"></script>
+<script src="js/utilities.js"></script>
+<script src="js/myloc.js"></script>
+<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+</body>
+</html>
